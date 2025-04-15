@@ -6,12 +6,6 @@
 
     <title>my portfolio</title>
 
-    <!-- JS -->
-    <script src="./js/script.js"></script>
-
-    <!-- CSS -->
-    <link href="./css/style.css" rel="stylesheet" />
-
     <!-- ICON TAB BROWSER -->
     <link rel="shortcut icon" href="img/favicon.ico" />
 
@@ -22,6 +16,15 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -34,10 +37,10 @@
       <!-- NAVBAR -->
       <nav>
         <ul class="nav_bar">
-          <li><a href="#about-me">Chi Sono</a></li>
-          <li><a href="#project">Dettagli del progetto</a></li>
-          <li><a href="#skills">Competenze</a></li>
-          <li><a href="#recommendations">Raccomandazioni</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project Details</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
         </ul>
       </nav>
 
@@ -48,9 +51,134 @@
     </header>
 
     <!-- MAIN -->
-    <main></main>
+    <main>
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <div id="img_container">
+          <img class="img_me" src="./img/me-gif.png" alt="me-ghibli-style" />
+        </div>
+
+        <div class="description">
+          <h1>Hi, I'm Michele Lorusso!</h1>
+          <br />
+          <p class="about-me-text">
+            I’m a web developer with around 3 years of experience working with
+            React, passionate about building dynamic and responsive user
+            interfaces. I completed a full-stack development program with
+            Boolean and I'm currently finishing my university degree in
+            "Informatics for Digital Businesses," which I expect to complete by
+            the end of this summer. I'm always looking to improve, learn new
+            technologies, and bring clean, efficient solutions to every project
+            I work on.
+          </p>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide skill-card html">
+              <div class="overlay">
+                <h6>HTML</h6>
+                <p>4 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card css">
+              <div class="overlay">
+                <h6>CSS</h6>
+                <p>4 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card js">
+              <div class="overlay">
+                <h6>JavaScript</h6>
+                <p>4 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card ts">
+              <div class="overlay">
+                <h6>TypeScript</h6>
+                <p>3 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card react">
+              <div class="overlay">
+                <h6>React</h6>
+                <p>3 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card bootstrap">
+              <div class="overlay">
+                <h6>Bootstrap</h6>
+                <p>2 years experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card sass">
+              <div class="overlay">
+                <h6>SASS</h6>
+                <p>1 year experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card vue">
+              <div class="overlay">
+                <h6>Vue.js</h6>
+                <p>6 months experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card redux">
+              <div class="overlay">
+                <h6>Redux</h6>
+                <p>1 year experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card php">
+              <div class="overlay">
+                <h6>PHP</h6>
+                <p>6 months experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card laravel">
+              <div class="overlay">
+                <h6>Laravel</h6>
+                <p>6 months experience</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide skill-card nextjs">
+              <div class="overlay">
+                <h6>Next.js</h6>
+                <p>6 months experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT -->
+      <section id="project"></section>
+
+      <!-- RECOMMENDATIONS -->
+      <section id="recommendations"></section>
+    </main>
 
     <!-- FOOTER -->
     <footer></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
