@@ -17,6 +17,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <!-- SWIPER CSS -->
     <link
       rel="stylesheet"
@@ -207,11 +213,84 @@
       </section>
 
       <!-- RECOMMENDATIONS -->
-      <section id="recommendations"></section>
+      <section id="recommendations">
+        <div style="text-align: center; margin-bottom: 50px">
+          <h1>Recommendations</h1>
+        </div>
+        <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Michele is an extremely passionate developer who pays great
+            attention to clean and efficient solutions. He is a curious and
+            proactive team player, always open to learning new technologies.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            I had the pleasure of collaborating with Michele during a full-stack
+            project. He’s reliable, skilled, and always helpful. A real asset to
+            any team.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Michele's approach to problem-solving and UI design is impressive.
+            His attention to detail and enthusiasm make him a great colleague
+            and developer.
+            <span>&#8221;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommendation Form -->
+      <section id="contact">
+        <div class="flex_center">
+          <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>
+            <input
+              type="text"
+              id="rec_name"
+              placeholder="Name (Optional)"
+            /><br />
+            <textarea
+              id="new_recommendation"
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p><span class="icon">📧</span> miky-l@hotmail.it</p>
+          <p><span class="icon">📞</span> +39 380 *******</p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/michelorusso" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/michele-lorusso-585832141/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+      <p class="footer-note">© 2025 Michele Lorusso. All rights reserved.</p>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

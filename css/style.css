@@ -6,6 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#about-me,
+#skills,
+#project,
+#recommendations {
+  scroll-margin-top: 100px;
+}
+
 /* HEADER */
 header {
   position: fixed;
@@ -19,6 +26,7 @@ header {
   align-items: center;
   justify-content: space-between;
   color: white;
+  z-index: 4;
 }
 
 .my_name {
@@ -92,7 +100,7 @@ h1 {
 
 /* SLIDER */
 #skills {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 .swiper {
   width: 100%;
@@ -194,7 +202,7 @@ h6 {
 #project {
   background-color: whitesmoke;
   padding: 3rem;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 -3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .pj-content {
@@ -217,6 +225,8 @@ h6 {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
+  max-width: 100%;
+  min-width: 150px;
   height: auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -231,6 +241,160 @@ h6 {
   font-weight: 600;
   color: #444;
   margin-top: 10px;
+}
+
+/* RECOMMENDATIONS */
+#recommendations {
+  padding: 50px 0;
+}
+
+.all_recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recommendation {
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-left: 6px solid #ee7752;
+  border-radius: 8px;
+  line-height: 1.5;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation span {
+  font-weight: bold;
+  color: #e73c7e;
+}
+
+#contact {
+  background-color: #fff;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  max-width: 800px;
+  width: 100%;
+}
+#rec_name {
+  margin-bottom: 10px;
+}
+
+.introduction {
+  font-weight: bold;
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(to bottom, #000000, #444444);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 1rem;
+  height: 200px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+
+.social-links i {
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #e73c7e;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+input,
+textarea,
+fieldset {
+  width: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0.75rem;
+  font-size: 1rem;
+
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+button#recommend_btn {
+  background-color: #23a6d5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 5px;
+}
+
+button#recommend_btn:hover {
+  background-color: #1e8db6;
 }
 
 @keyframes gradient {
